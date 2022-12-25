@@ -1,12 +1,20 @@
 # Nginx docker setup
 
-# Setting up for nginx
+## How to run the application
+
+1. Docker compose file up command to run containers
+    1. Docker for Application One 
+    2. Docker for Application Two
+    3. Docker for Nginx
+
+## Setting up for nginx
 
 1. create folder conf.d/custom.conf
 2. Add conf to listen 80
 3. Setting up proxy_pass
 
-# Understanding the Nginx Conf file
+## Understanding the Nginx Conf file
+
 ```python
 
 # server {} is the main code block
@@ -41,11 +49,11 @@ server{
 ```
 
 ## Docker compose changes for nginx
+
 1. Add network for all containers
 2. Mount configuration file via volume
 
+## Check Reverse proxy for Nginx
 
-## Check Reverse proxy for Nginx 
 1. navivate to localhost/appone it will redirect to App One ( 5001)
 2. Navigate to localhost/apptwo will redirect to App Two ( 5002)
-
